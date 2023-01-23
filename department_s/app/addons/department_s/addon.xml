@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>department_s</id>
+    <version>1.0.0</version>
+    <priority>100</priority>
+    <position>10</position>
+    <status>active</status>
+    <has_icon>Y</has_icon>
+    <queries>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:departments` (
+            department_id INT(11) unsigned NOT NULL AUTO_INCREMENT,
+            lang_code char(2) NOT NULL DEFAULT '',
+            name varchar(255) NOT NULL DEFAULT '',
+            description text NULL,
+            timestamp INT(11) unsigned NOT NULL DEFAULT '0',
+            status varchar(1) NOT NULL DEFAULT 'A',
+            PRIMARY KEY (department_id, lang_code)
+            ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:department_lead` (
+            department_id INT(11) unsigned NOT NULL DEFAULT '0',
+            user_id INT(11) unsigned NOT NULL DEFAULT '0',
+            KEY (user_id),
+            PRIMARY KEY (department_id)
+            ) ENGINE=INNODB DEFAULT CHARSET=utf8;
+        </item>
+        <item for="install">
+            CREATE TABLE IF NOT EXISTS `?:department_staff` (
+            department_id INT(11) unsigned NOT NULL DEFAULT '0',
+            user_id INT(11) unsigned NOT NULL DEFAULT '0',
+            KEY (department_id),
+            KEY (user_id),
+            PRIMARY KEY (department_id, user_id)
+            ) ENGINE=INNODB DEFAULT CHARSET=utf8
+        </item>
+        <item for="uninstall">DROP TABLE IF EXISTS `?:departments`</item>
+        <item for="uninstall">DROP TABLE IF EXISTS `?:department_lead`</item>
+        <item for="uninstall">DROP TABLE IF EXISTS `?:department_staff`</item>
+    </queries>
+</addon>
