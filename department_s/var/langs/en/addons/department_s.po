@@ -1,0 +1,57 @@
+msgid ""
+msgstr "Project-Id-Version: tygh\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language-Team: English\n"
+"Language: en_US"
+
+msgctxt "Addons::name::department_s"
+msgid "Simtech Development: Departments"
+msgstr "Simtech Development: Departments"
+
+msgctxt "Addons::description::department_s"
+msgid "Allows you to add products departments. <a href=\"https://www.simtechdev.com/\" target=\"_blank\">Support</a>"
+msgstr "Allows you to add products departments. <a href=\"https://www.simtechdev.com/\" target=\"_blank\">Support</a>"
+
+msgctxt "SettingsSections::department_s.departments"
+msgid "Departments"
+msgstr "Departments"
+
+msgctxt "Languages::department_manage"
+msgid "Manage departments"
+msgstr "Manage departments"
+
+msgctxt "Languages::department_add"
+msgid "Add a new department"
+msgstr "Add a new department"
+
+msgctxt "Languages::add_department_lead"
+msgid "Add lead of department"
+msgstr "Add lead of department"
+
+msgctxt "Languages::add_department_staff"
+msgid "Add staff of department"
+msgstr "Add staff of department"
+
+msgctxt "Languages::department_desc"
+msgid "Here you can create, delete and manage departments"
+msgstr "Here you can create, delete and manage departments"
+
+msgctxt "Languages::department_update"
+msgid "Update department"
+msgstr "Update department"
+
+msgctxt "Languages::departments.lead_name"
+msgid "Lead's name"
+msgstr "Lead's name"
+
+msgctxt "Languages::departments.staff_name"
+msgid "Staff names"
+msgstr "Staff names"
+
+msgctxt "Languages::department"
+msgid "Department"
+msgstr "Department"
+
+msgctxt "SettingsSections::departments"
+msgid "Departments"
+msgstr "Departments"
